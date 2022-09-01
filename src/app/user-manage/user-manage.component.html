@@ -1,0 +1,17 @@
+<div class="text-center p-4">
+    <div class="row">
+        <div class="col-3">
+            <p>main</p>
+            <p>{{user.firstname}} {{user.lastname}}</p>
+        </div>
+        <div class="col-3">
+            <app-user-manage-detail [data]="user"></app-user-manage-detail>
+        </div>
+        <div class="col-3">
+            <app-user-manage-edit [data]="user"></app-user-manage-edit>
+        </div>
+        <div class="col-3">
+            <app-user-manage-save-edit [data]="user" [callFunction]=alertMsg></app-user-manage-save-edit>
+        </div>
+    </div>
+</div>

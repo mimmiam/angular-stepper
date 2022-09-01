@@ -1,21 +1,33 @@
-.grid-list{
-    flex-direction: column;
+/* css for stepper html */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+}
+.grid-container > div {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    text-align: center;
+    padding: 20px 0;
+    /* font-size: 30px; */
 }
 
-.wrapper-progressBar {
-    width: 100%;
+.row-col-12 {
+    grid-column: 1 / span 4;
 }
 
 .progressBar li {
+    /* list-style-type = none -> for hide bullet points */
     list-style-type: none;
     float: left;
-    width: 10%;
+    width: 12%;
     position: relative;
     text-align: center;
 }
 
 .progressBar li:before {
-    content: " ";
+    content: "";
     line-height: 30px;
     border-radius: 50%;
     width: 35px;
@@ -48,7 +60,7 @@
 
 .progressBar li.active:before {
     border-color: #5cb85c;
-    background-color: #5cb85c
+    background-color: #5cb85c;
 }
 
 .progressBar .active:after {

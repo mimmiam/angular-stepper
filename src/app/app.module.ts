@@ -7,11 +7,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StepperExampleComponent } from './stepper-example/stepper-example.component';
+import { UserManageComponent } from './user-manage/user-manage.component';
+import { UserManageDetailComponent } from './user-manage/user-manage-detail/user-manage-detail.component';
+import { UserManageEditComponent } from './user-manage/user-manage-edit/user-manage-edit.component';
+import { UserManageSaveEditComponent } from './user-manage/user-manage-save-edit/user-manage-save-edit.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StepperExampleComponent
+    StepperExampleComponent,
+    UserManageComponent,
+    UserManageDetailComponent,
+    UserManageEditComponent,
+    UserManageSaveEditComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +28,8 @@ import { StepperExampleComponent } from './stepper-example/stepper-example.compo
     BrowserAnimationsModule,
     MaterialExampleModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
